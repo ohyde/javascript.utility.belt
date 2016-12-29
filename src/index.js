@@ -1,10 +1,11 @@
-import ramdaUtils from './utils/ramdaUtils';
-import mathsUtils from './utils/mathsUtils';
-
-import emailValidation from './validation/emailValidation';
+import { isEven, isOdd, mapIndexed, moduloTwo } from './utils/ramdaUtils';
+import { gcd, lcm } from './utils/mathsUtils';
 
 export {
-  ramdaUtils,
-  mathsUtils,
-  emailValidation
-};
+  isEven,
+  isOdd,
+  mapIndexed,
+  moduloTwo,
+  gcd,
+  lcm
+}
