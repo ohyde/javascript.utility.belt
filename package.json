@@ -4,7 +4,9 @@
   "description": "\"# javascript.utility.belt\"",
   "main": "./lib/index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
+    "test": "nyc --reporter=text --cache mocha --watch tests/.setup.js tests/**/*.test.js",
+    "test-single": "nyc --reporter=text --cache mocha tests/.setup.js tests/**/*.test.js",
+    "cover": "node_modules/.bin/nyc report --reporter=text-lcov | coveralls",
     "prepublish": "npm run build",
     "build": "node ./node_modules/babel-cli/bin/babel.js src --out-dir lib"
   },
@@ -21,6 +23,12 @@
   "devDependencies": {
     "babel-cli": "^6.18.0",
     "babel-preset-es2015": "^6.18.0",
-    "babel-preset-stage-0": "^6.16.0"
+    "babel-preset-stage-0": "^6.16.0",
+    "chai": "^3.5.0",
+    "coveralls": "^2.11.15",
+    "jsdom": "^9.9.1",
+    "mocha": "^3.2.0",
+    "nyc": "^10.0.0",
+    "ramda": "^0.23.0"
   }
 }
