@@ -8,7 +8,8 @@
     "test-single": "nyc --reporter=text --cache mocha tests/.setup.js tests/**/*.test.js",
     "cover": "node_modules/.bin/nyc report --reporter=text-lcov | coveralls",
     "prepublish": "npm run build",
-    "build": "node ./node_modules/babel-cli/bin/babel.js src --out-dir lib"
+    "build": "node ./node_modules/babel-cli/bin/babel.js src --out-dir lib",
+    "dev": "node_modules/.bin/babel-node"
   },
   "repository": {
     "type": "git",
@@ -27,8 +28,10 @@
     "chai": "^3.5.0",
     "coveralls": "^2.11.15",
     "jsdom": "^9.9.1",
+    "lodash": "^4.17.4",
     "mocha": "^3.2.0",
     "nyc": "^10.0.0",
-    "ramda": "^0.23.0"
+    "ramda": "^0.23.0",
+    "ramda-fantasy": "^0.7.0"
   }
 }
