@@ -1,5 +1,5 @@
 import { isEven, isOdd, mapIndexed, moduloTwo, defaultToUndefined } from './utils/ramdaUtils';
-import { gcd, lcm, isPrime } from './utils/mathsUtils';
+import { gcd, lcm, isPrime, equalsZero } from './utils/mathsUtils';
 
 export {
   isEven,
@@ -9,5 +9,6 @@ export {
   defaultToUndefined,
   gcd,
   lcm,
-  isPrime
+  isPrime,
+  equalsZero
 }

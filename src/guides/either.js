@@ -1,6 +1,5 @@
 // https://medium.com/@rajaraodv/functional-programming-in-js-with-practical-examples-part-1-87c2b0dbc276?_branch_match_id=329319801592239501#.1kpksk8oo
 
-
 import { Either } from 'ramda-fantasy';
 import R from 'ramda';
 import _ from 'lodash';
