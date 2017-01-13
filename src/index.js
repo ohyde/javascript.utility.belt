@@ -1,5 +1,5 @@
 import { isEven, isOdd, mapIndexed, moduloTwo, defaultToUndefined } from './utils/ramdaUtils';
-import { gcd, lcm, isPrime, equalsZero, fibonacci } from './utils/mathsUtils';
+import { gcd, lcm, isPrime, equalsZero, fibonacci, intReverse } from './utils/mathsUtils';
 
 export {
   isEven,
@@ -11,5 +11,6 @@ export {
   lcm,
   isPrime,
   equalsZero,
-  fibonacci
+  fibonacci,
+  intReverse
 }
