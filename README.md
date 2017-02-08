@@ -1,2 +1,4 @@
-"# javascript.utility.belt" Holiday 
-travel
+# javascript.utility.belt
+
+Helper functions for use in javascript projects
+

@@ -25,3 +25,7 @@ export const isPrime = (num) => {
   }
   return true;
 }
+
+export const intReverse = (intToReverse) => {
+  return parseInt(R.toString(intToReverse).split('').reverse().join(''))
+}
