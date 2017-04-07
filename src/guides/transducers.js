@@ -1,4 +1,5 @@
 // https://medium.com/@roman01la/understanding-transducers-in-javascript-3500d3bd9624
+import R from 'ramda';
 
 const mapping = (f) => (reducing) => (result, input) => reducing(result, f(input));
 const filtering = (predicate) => (reducing) => (result, input) => predicate(input) ? reducing(result, input) : result;
