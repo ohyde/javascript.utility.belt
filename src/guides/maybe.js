@@ -1,3 +1,5 @@
+// http://buzzdecafe.github.io/code/2014/10/26/functors-and-applicatives
+
 function fromNullable(x) {
   return x == null ? Maybe.Nothing : Maybe.Just(x);
 }
