@@ -14,3 +14,15 @@ export const isObjValidWithKeys = (obj, keys) => {
     return R.has(x, obj);
   }, true, keys);
 }
+
+// const byTheNumberLessThan3 = {
+//  expr: R.gt(R.__, 0),
+//  prop: 'theNum'
+//}
+//filterByAttributeAllTrue([byTheNumberLessThan3], anArray) 
+export const filterByAttributeAllTrue = R.curry((conditions, arr) => {
+  return R.filter((item) => {
+    const results = R.map(eachCondition => eachCondition.expr(R.prop(eachCondition.prop, item)), conditions);
+    return R.all(R.equals(true))(results);
+  }, arr)
+})
