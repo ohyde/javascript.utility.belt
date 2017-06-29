@@ -26,3 +26,7 @@ export const filterByAttributeAllTrue = R.curry((conditions, arr) => {
     return R.all(R.equals(true))(results);
   }, arr)
 })
+
+
+export const dotPath = R.useWith(R.path, [R.split('.')]);
+export const propsDotPath = R.useWith(R.ap, [R.map(dotPath), R.of]);
