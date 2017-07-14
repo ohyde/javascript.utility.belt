@@ -1,4 +1,4 @@
-import { isEven, isOdd, mapIndexed, moduloTwo, defaultToUndefined } from './utils/ramdaUtils';
+import { isEven, isOdd, mapIndexed, moduloTwo, defaultToUndefined, isObj, arrGt, isNotEmptyArray, isObjValidWithKeys } from './utils/ramdaUtils';
 import { gcd, lcm, isPrime, equalsZero, fibonacci, intReverse } from './utils/mathsUtils';
 
 export {
