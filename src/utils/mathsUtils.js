@@ -13,7 +13,7 @@ export const fibonacci = (n) => {
 
 export const isPrime = (num) => {
   if(R.or(R.lte(num, 1), equalsZero(moduloTwo(num)))) return false;
-  if(num == 2) return true;
+  if(R.equals(num, 2)) return true;
 
   let i = 3;
   while ((i * i) <= num) {
