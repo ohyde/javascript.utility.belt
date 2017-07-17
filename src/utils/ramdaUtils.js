@@ -29,3 +29,6 @@ export const dotPath = R.useWith(R.path, [R.split('.')]);
 export const propsDotPath = R.useWith(R.ap, [R.map(dotPath), R.of]);
 
 export const arrayPath = (array, object) => R.view(R.lensPath(array), object);
+
+export default { moduloTwo, mapIndexed, isEven, isOdd, defaultToUndefined, isObj, arrGt, isNotEmptyArray, isObjValidWithKeys, filterByAttributeAllTrue,
+dotPath, propsDotPath, arrayPath }
