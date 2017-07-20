@@ -30,5 +30,7 @@ export const propsDotPath = R.useWith(R.ap, [R.map(dotPath), R.of]);
 
 export const arrayPath = (array, object) => R.view(R.lensPath(array), object);
 
+export const taplog = R.tap(console.log);
+
 export default { moduloTwo, mapIndexed, isEven, isOdd, defaultToUndefined, isObj, arrGt, isNotEmptyArray, isObjValidWithKeys, filterByAttributeAllTrue,
-dotPath, propsDotPath, arrayPath }
+dotPath, propsDotPath, arrayPath, taplog }
