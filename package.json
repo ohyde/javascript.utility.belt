@@ -1,6 +1,6 @@
 {
   "name": "javascript.utility.belt",
-  "version": "1.0.13",
+  "version": "1.1.3",
   "description": "\"# javascript.utility.belt\"",
   "main": "./lib/index.js",
   "scripts": {
@@ -31,7 +31,7 @@
     "lodash": "^4.17.4",
     "mocha": "^3.2.0",
     "nyc": "^10.0.0",
-    "ramda": "^0.23.0",
+    "ramda": "^0.24.1",
     "ramda-fantasy": "^0.7.0"
   }
 }

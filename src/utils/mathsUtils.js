@@ -29,3 +29,6 @@ export const isPrime = (num) => {
 export const intReverse = (intToReverse) => {
   return parseInt(R.toString(intToReverse).split('').reverse().join(''))
 }
+
+
+export default { gcd, lcm, equalsZero, fibonacci, isPrime, intReverse }
