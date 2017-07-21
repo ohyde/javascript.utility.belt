@@ -1,9 +1,6 @@
 import R from 'ramda';
 
-export const moduloTwo = R.flip(R.modulo)(2);
 export const mapIndexed = R.addIndex(R.map);
-export const isEven = R.compose(R.equals(0), moduloTwo);
-export const isOdd = R.compose(R.gt(R.__, 0), moduloTwo);
 export const defaultToUndefined = R.defaultTo(undefined);
 export const isObj = R.is(Object);
 export const arrGt = (arr, num = 0) => R.gt(R.length(arr), num);
@@ -32,4 +29,4 @@ export const arrayPath = (array, object) => R.view(R.lensPath(array), object);
 
 export const taplog = R.tap(console.log);
 
-export default { moduloTwo, mapIndexed, isEven, isOdd, defaultToUndefined, isObj, arrGt, dotPath, propsDotPath, arrayPath, taplog }
+export default { mapIndexed, defaultToUndefined, isObj, arrGt, dotPath, propsDotPath, arrayPath, taplog }
