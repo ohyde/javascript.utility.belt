@@ -1,5 +1,5 @@
 import R from 'ramda';
-import { moduloTwo } from './ramdaUtils';
+import { moduloTwo } from './numberUtils';
 
 // maths
 export const gcd = (a, b) => !b ? a : gcd(b, a % b)
@@ -29,6 +29,3 @@ export const isPrime = (num) => {
 export const intReverse = (intToReverse) => {
   return parseInt(R.toString(intToReverse).split('').reverse().join(''))
 }
-
-
-export default { gcd, lcm, equalsZero, fibonacci, isPrime, intReverse }
