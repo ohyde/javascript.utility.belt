@@ -1,0 +1,8 @@
+{
+	"source": "./src/utils",
+	"destination": "./doc",
+	"plugins": [{"name": "esdoc-standard-plugin"}],
+	"manual": {
+		"overview": ["./manual/overview.md"]
+  }
+}
