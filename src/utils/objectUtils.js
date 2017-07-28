@@ -1,5 +1,5 @@
 import R from 'ramda';
-import jub from 'index';
+import jub from '../index';
 
 export const dotPath = R.useWith(R.path, [R.split('.')]);
 export const propsDotPath = R.useWith(R.ap, [R.map(dotPath), R.of]);

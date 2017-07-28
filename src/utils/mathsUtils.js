@@ -1,5 +1,5 @@
 import R from 'ramda';
-import { moduloTwo } from './numberUtils';
+import jub from '../index';
 
 // maths
 export const gcd = (a, b) => !b ? a : gcd(b, a % b)
@@ -12,7 +12,7 @@ export const fibonacci = (n) => {
 }
 
 export const isPrime = (num) => {
-  if(R.or(R.lte(num, 1), equalsZero(moduloTwo(num)))) return false;
+  if(R.or(R.lte(num, 1), equalsZero(jub.moduloTwo(num)))) return false;
   if(R.equals(num, 2)) return true;
 
   let i = 3;
