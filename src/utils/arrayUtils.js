@@ -2,7 +2,7 @@ import R from 'ramda';
 
 export const mapIndexed = R.addIndex(R.map);
 
-export const arrGt = (arr, num = 0) => R.gt(R.length(arr), num);
+export const arrGt = (num = 0, arr) => R.gt(R.length(arr), num);
 
 // export const isNotEmptyArray = R.allPass([arrGt, R.isArrayLike]);
 // export const isObjValidWithKeys = (obj, keys) => {
