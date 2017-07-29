@@ -5,8 +5,8 @@
   "main": "./lib/index.js",
   "scripts": {
     "test": "jest",
-    "test:coverage": "node node_modules/jest/bin/jest --coverage",
-    "test:watch": "node node_modules/jest/bin/jest --watch",
+    "test:coverage": "jest --coverage",
+    "test:watch": "jest --watch",
     "cover": "node_modules/.bin/nyc report --reporter=text-lcov | coveralls",
     "prepublish": "npm run build",
     "build": "node ./node_modules/babel-cli/bin/babel.js src --out-dir lib",
@@ -55,8 +55,7 @@
       "<rootDir>/src"
     ],
     "roots": [
-      "<rootDir>/src",
-      "<rootDir>/tests/__mocks__/"
+      "<rootDir>/src"
     ],
     "setupTestFrameworkScriptFile": "<rootDir>/tests/jest.setup.js",
     "testRegex": "^.+\\.spec\\.jsx?$",
