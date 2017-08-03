@@ -1,9 +1,11 @@
 // Built for AWS Lambda Function Event Object
 
-const methodGET = R.propEq('method', 'GET');
-const methodPOST = R.propEq('method', 'POST');
-const methodPUT = R.propEq('method', 'PUT');
-const methodDELETE = R.propEq('method', 'DELETE');
+const methodProp = R.propEq('method')
+
+const methodGET = methodProp('GET');
+const methodPOST = methodProp('POST');
+const methodPUT = methodProp('PUT');
+const methodDELETE = methodProp('DELETE');
 
 const resourceBase = createResourceTest(R.equals('/'));
 const resourceHealthcheck = createResourceTest(R.startsWith('/healthcheck'));
