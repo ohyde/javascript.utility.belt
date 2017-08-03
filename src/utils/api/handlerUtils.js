@@ -16,3 +16,14 @@ export const postAPI = R.allPass([methodPOST, resourceBase]);
 export const putAPI = R.allPass([methodPUT, resourceBase]);
 export const deleteAPI = R.allPass([methodDELETE, resourceBase]);
 export const healthcheckGetAPI = R.allPass([methodGET, resourceHealthcheck]);
+
+
+// Example Usage:
+// return R.cond([
+// 	[getAPI, getHandler],
+// 	[postAPI, createHandler],
+// 	[putAPI, updateHandler],
+// 	[deleteAPI, deleteHandler],
+// 	[healthcheckGetAPI, healthcheckHandler],
+// 	[R.T, defaultHandler]
+// ])(event);
