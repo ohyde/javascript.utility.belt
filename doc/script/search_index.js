@@ -12,9 +12,21 @@ window.esdocSearchIndex = [
     "function"
   ],
   [
+    "javascript.utility.belt/utils/api/handlerutils.js~createresourcetest",
+    "function/index.html#static-function-createResourceTest",
+    "<span>createResourceTest</span> <span class=\"search-result-import-path\">javascript.utility.belt/utils/api/handlerUtils.js</span>",
+    "function"
+  ],
+  [
     "javascript.utility.belt/utils/miscutils.js~defaulttoundefined",
     "variable/index.html#static-variable-defaultToUndefined",
     "<span>defaultToUndefined</span> <span class=\"search-result-import-path\">javascript.utility.belt/utils/miscUtils.js</span>",
+    "variable"
+  ],
+  [
+    "javascript.utility.belt/utils/api/handlerutils.js~deleteapi",
+    "variable/index.html#static-variable-deleteAPI",
+    "<span>deleteAPI</span> <span class=\"search-result-import-path\">javascript.utility.belt/utils/api/handlerUtils.js</span>",
     "variable"
   ],
   [
@@ -40,6 +52,18 @@ window.esdocSearchIndex = [
     "function/index.html#static-function-gcd",
     "<span>gcd</span> <span class=\"search-result-import-path\">javascript.utility.belt/utils/mathsUtils.js</span>",
     "function"
+  ],
+  [
+    "javascript.utility.belt/utils/api/handlerutils.js~getapi",
+    "variable/index.html#static-variable-getAPI",
+    "<span>getAPI</span> <span class=\"search-result-import-path\">javascript.utility.belt/utils/api/handlerUtils.js</span>",
+    "variable"
+  ],
+  [
+    "javascript.utility.belt/utils/api/handlerutils.js~healthcheckgetapi",
+    "variable/index.html#static-variable-healthcheckGetAPI",
+    "<span>healthcheckGetAPI</span> <span class=\"search-result-import-path\">javascript.utility.belt/utils/api/handlerUtils.js</span>",
+    "variable"
   ],
   [
     "javascript.utility.belt/utils/mathsutils.js~intreverse",
@@ -102,9 +126,21 @@ window.esdocSearchIndex = [
     "variable"
   ],
   [
+    "javascript.utility.belt/utils/api/handlerutils.js~postapi",
+    "variable/index.html#static-variable-postAPI",
+    "<span>postAPI</span> <span class=\"search-result-import-path\">javascript.utility.belt/utils/api/handlerUtils.js</span>",
+    "variable"
+  ],
+  [
     "javascript.utility.belt/utils/objectutils.js~propsdotpath",
     "variable/index.html#static-variable-propsDotPath",
     "<span>propsDotPath</span> <span class=\"search-result-import-path\">javascript.utility.belt/utils/objectUtils.js</span>",
+    "variable"
+  ],
+  [
+    "javascript.utility.belt/utils/api/handlerutils.js~putapi",
+    "variable/index.html#static-variable-putAPI",
+    "<span>putAPI</span> <span class=\"search-result-import-path\">javascript.utility.belt/utils/api/handlerUtils.js</span>",
     "variable"
   ],
   [
@@ -444,6 +480,12 @@ window.esdocSearchIndex = [
     "external"
   ],
   [
+    "utils/api/handlerutils.js",
+    "file/utils/api/handlerUtils.js.html",
+    "utils/api/handlerUtils.js",
+    "file"
+  ],
+  [
     "utils/arrayutils.js",
     "file/utils/arrayUtils.js.html",
     "utils/arrayUtils.js",
@@ -483,6 +525,18 @@ window.esdocSearchIndex = [
     "utils/stringutils.js",
     "file/utils/stringUtils.js.html",
     "utils/stringUtils.js",
+    "file"
+  ],
+  [
+    "utils/tests/arrayutils.spec.js",
+    "file/utils/tests/arrayUtils.spec.js.html",
+    "utils/tests/arrayUtils.spec.js",
+    "file"
+  ],
+  [
+    "utils/tests/numberutils.spec.js",
+    "file/utils/tests/numberUtils.spec.js.html",
+    "utils/tests/numberUtils.spec.js",
     "file"
   ]
 ]

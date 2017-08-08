@@ -51,21 +51,30 @@
 <li data-ice="doc"><span data-ice="kind" class="kind-variable">V</span><span data-ice="name"><span><a href="variable/index.html#static-variable-dotPath">dotPath</a></span></span></li>
 <li data-ice="doc"><span data-ice="kind" class="kind-variable">V</span><span data-ice="name"><span><a href="variable/index.html#static-variable-pathNotNil">pathNotNil</a></span></span></li>
 <li data-ice="doc"><span data-ice="kind" class="kind-variable">V</span><span data-ice="name"><span><a href="variable/index.html#static-variable-propsDotPath">propsDotPath</a></span></span></li>
+<li data-ice="doc"><div data-ice="dirPath" class="nav-dir-path">api</div><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-createResourceTest">createResourceTest</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-variable">V</span><span data-ice="name"><span><a href="variable/index.html#static-variable-deleteAPI">deleteAPI</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-variable">V</span><span data-ice="name"><span><a href="variable/index.html#static-variable-getAPI">getAPI</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-variable">V</span><span data-ice="name"><span><a href="variable/index.html#static-variable-healthcheckGetAPI">healthcheckGetAPI</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-variable">V</span><span data-ice="name"><span><a href="variable/index.html#static-variable-postAPI">postAPI</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-variable">V</span><span data-ice="name"><span><a href="variable/index.html#static-variable-putAPI">putAPI</a></span></span></li>
 </ul>
 </div>
 </nav>
 
 <div class="content" data-ice="content"><h1 data-ice="title">utils/objectUtils.js</h1>
 <pre class="source-code line-number raw-source-code"><code class="prettyprint linenums" data-ice="content">import R from &apos;ramda&apos;;
-import jub from &apos;index&apos;;
+import jub from &apos;../index&apos;;
 
 export const dotPath = R.useWith(R.path, [R.split(&apos;.&apos;)]);
 export const propsDotPath = R.useWith(R.ap, [R.map(dotPath), R.of]);
 export const arrayPath = (array, object) =&gt; R.view(R.lensPath(array), object);
 
 
-/** @function myFunction */
-export const pathNotNil = R.pathSatisfies(x =&gt; jub.isNotNil(x)); 
+/* @function myFunction
+ * const objectO = { test: { value: &apos;here&apos; } }
+ * pathNotNil([&apos;test&apos;, &apos;value&apos;], objectO)
+ */
+export const pathNotNil = R.pathSatisfies(jub.isNotNil); 
 </code></pre>
 
 </div>

@@ -6,11 +6,8 @@ export const propsDotPath = R.useWith(R.ap, [R.map(dotPath), R.of]);
 export const arrayPath = (array, object) => R.view(R.lensPath(array), object);
 
 
-/** @function myFunction */
- * @example
- * // returns true
+/* @function myFunction
  * const objectO = { test: { value: 'here' } }
  * pathNotNil(['test', 'value'], objectO)
- * @returns {bool} Returns the truthiness of the object paths existence 
  */
 export const pathNotNil = R.pathSatisfies(jub.isNotNil); 

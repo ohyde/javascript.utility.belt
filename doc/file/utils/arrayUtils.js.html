@@ -51,6 +51,12 @@
 <li data-ice="doc"><span data-ice="kind" class="kind-variable">V</span><span data-ice="name"><span><a href="variable/index.html#static-variable-dotPath">dotPath</a></span></span></li>
 <li data-ice="doc"><span data-ice="kind" class="kind-variable">V</span><span data-ice="name"><span><a href="variable/index.html#static-variable-pathNotNil">pathNotNil</a></span></span></li>
 <li data-ice="doc"><span data-ice="kind" class="kind-variable">V</span><span data-ice="name"><span><a href="variable/index.html#static-variable-propsDotPath">propsDotPath</a></span></span></li>
+<li data-ice="doc"><div data-ice="dirPath" class="nav-dir-path">api</div><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-createResourceTest">createResourceTest</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-variable">V</span><span data-ice="name"><span><a href="variable/index.html#static-variable-deleteAPI">deleteAPI</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-variable">V</span><span data-ice="name"><span><a href="variable/index.html#static-variable-getAPI">getAPI</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-variable">V</span><span data-ice="name"><span><a href="variable/index.html#static-variable-healthcheckGetAPI">healthcheckGetAPI</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-variable">V</span><span data-ice="name"><span><a href="variable/index.html#static-variable-postAPI">postAPI</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-variable">V</span><span data-ice="name"><span><a href="variable/index.html#static-variable-putAPI">putAPI</a></span></span></li>
 </ul>
 </div>
 </nav>
@@ -59,17 +65,7 @@
 <pre class="source-code line-number raw-source-code"><code class="prettyprint linenums" data-ice="content">import R from &apos;ramda&apos;;
 
 export const mapIndexed = R.addIndex(R.map);
-
-export const arrGt = (arr, num = 0) =&gt; R.gt(R.length(arr), num);
-
-// export const isNotEmptyArray = R.allPass([arrGt, R.isArrayLike]);
-// export const isObjValidWithKeys = (obj, keys) =&gt; {
-//   return isObj(obj) &amp;&amp; R.reduce((acc, x) =&gt; {
-//     if (R.not(acc)) return false;
-//     return R.has(x, obj);
-//   }, true, keys);
-// }
-
+export const arrGt = (num = 0, arr) =&gt; R.gt(R.length(arr), num);
 </code></pre>
 
 </div>
