@@ -7,4 +7,7 @@ export const arrayPath = (array, object) => R.view(R.lensPath(array), object);
 
 
 /** @function myFunction */
-export const pathNotNil = R.pathSatisfies(x => jub.isNotNil(x)); 
+/* Example */
+// const objectO = { test: { value: 'here' } }
+// pathNotNil(['test', 'value'], objectO)
+export const pathNotNil = R.pathSatisfies(jub.isNotNil); 
