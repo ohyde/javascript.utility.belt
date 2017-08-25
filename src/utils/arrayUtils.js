@@ -7,11 +7,11 @@ export const updateObjectInArrayByPropEq = (existingArray, newObject, propMatch 
   const newPropVal = R.propOr(null, propMatch, newObject);
   if(newPropVal === null) return existingArray; 
   
-  const currentUserObjectIndex = R.findIndex(R.propEq(propMatch, newPropVal), existingArray);
-  if(currentUserObjectIndex === -1) return existingArray;
+  const currentObjectIndex = R.findIndex(R.propEq(propMatch, newPropVal), existingArray);
+  if(currentObjectIndex === -1) return existingArray;
   
-  const currentUserObject = R.nth(currentUserObjectIndex, existingArray);
-  const newUserObject = R.merge(currentUserObject, newObject) ;
+  const currentObject = R.nth(currentObjectIndex, existingArray);
+  const mergedObject = R.merge(currentObject, newObject) ;
   
-  return R.update(currentUserObjectIndex)(newUserObject)(existingArray);
+  return R.update(currentObjectIndex)(mergedObject)(existingArray);
 }
