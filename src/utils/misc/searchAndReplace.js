@@ -1,14 +1,12 @@
 const isObj = R.compose(R.equals('Object'), R.type);
 const isArray = R.compose(R.equals('Array'), R.type); 
-
+const isString = R.compose(R.equals('String'), R.type);
 
 const objSearch = (needleFunc, replaceFunc, obj) => {
   const result = R.reduce((acc, key) => {
     if (needleFunc(key)) {
-      if (isArray(obj[key])) {
-        const replaced = R.map(replaceFunc, obj[key]);
-        return R.merge(acc, { [key]: replaced })
-      }
+      if (isArray(obj[key])) return R.merge(acc, { [key]: R.map(replaceFunc, obj[key]) });
+      if(isString(obj[key])) return R.merge(acc, { [key]: replaceFunc(obj[key]) });
     }
     
     if (isObj(obj[key])) return R.merge(acc, { [key]: searchAndReplace(needleFunc, replaceFunc, obj[key]) })
