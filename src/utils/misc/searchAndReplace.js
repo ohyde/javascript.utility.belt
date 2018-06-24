@@ -6,11 +6,11 @@ const objSearch = (needleFunc, replaceFunc, obj) => {
   const result = R.reduce((acc, key) => {
     if (needleFunc(key)) {
       if (isArray(obj[key])) return R.merge(acc, { [key]: R.map(replaceFunc, obj[key]) });
-      if(isString(obj[key])) return R.merge(acc, { [key]: replaceFunc(obj[key]) });
+      if (isString(obj[key])) return R.merge(acc, { [key]: replaceFunc(obj[key]) });
     }
     
-    if (isObj(obj[key])) return R.merge(acc, { [key]: searchAndReplace(needleFunc, replaceFunc, obj[key]) })
-    if (isArray(obj[key])) return R.merge(acc, { [key]: searchAndReplace(needleFunc, replaceFunc, obj[key]) })
+    if (isObj(obj[key])) return R.merge(acc, { [key]: searchAndReplace(needleFunc, replaceFunc, obj[key]) });
+    if (isArray(obj[key])) return R.merge(acc, { [key]: searchAndReplace(needleFunc, replaceFunc, obj[key]) });
     
     return R.merge(acc, { [key]: obj[key] });
   }, {}, R.keys(obj));
@@ -28,8 +28,8 @@ const arraySearch = (needleFunc, replaceFunc, arr) => {
 
 // searchAndReplace(R.startsWith('reference_'), documentOne)
 const searchAndReplace = (needleFunc, replaceFunc, obj) => {
-  if (isObj(obj)) { return objSearch(needleFunc, replaceFunc, obj) }
-  if (isArray(obj)) { return arraySearch(needleFunc, replaceFunc, obj) }
+  if (isObj(obj)) return objSearch(needleFunc, replaceFunc, obj);
+  if (isArray(obj)) return arraySearch(needleFunc, replaceFunc, obj);
   
   return obj;
 }
